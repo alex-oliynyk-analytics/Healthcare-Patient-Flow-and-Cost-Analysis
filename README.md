@@ -11,6 +11,21 @@ The goal of this analysis was to:
 - Assess whether meaningful variation exists across key segments
 
 ---
+## 📊 Tableau Dashboard
+
+An interactive dashboard was built in Tableau to visualize key findings from the SQL analysis, including:
+
+- Patient distribution by admission type  
+- Average length of stay by age group  
+- Billing comparison across medical conditions  
+
+🔗 View Dashboard: (https://public.tableau.com/app/profile/alex.oliynyk/viz/HealthcarePatientFlowCostAnalysis/Dashboard1)
+
+📷 Dashboard Preview:
+<img width="994" height="563" alt="dashboard_1223" src="https://github.com/user-attachments/assets/79b30bc4-638a-4136-be21-6cb6d191be5a" />
+
+
+---
 
 ## 🧰 Tools Used
 
