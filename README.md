@@ -103,7 +103,7 @@ FROM healthcare_dataset;
 <img width="162" height="51" alt="Query_3_ Average_length_of_stay" src="https://github.com/user-attachments/assets/ea889bf4-dd22-43dd-b89d-4624c71e1255" />
 
 ### Findings:
-* Length of stay is nearly identical across all conditions (~15.4–15.7 days)
+* Average Length of Stay: ~15.5 days
 
 ### Insight:
 * Indicates standardized treatment duration across conditions
@@ -144,7 +144,7 @@ GROUP BY [Medical Condition];
 * Average billing remains consistent (~$25K) across all conditions
 
 ### Insight:
-* Costs are not condition-driven → pricing appears standardized
+* Billing does not significantly vary by condition, indicating a standardized pricing structure
 ---
 
 ### 6. Billing by Insurance Provider
@@ -204,8 +204,8 @@ GROUP BY [Medical Condition];
 ```
 <img width="341" height="184" alt="Query_8_Cost_vs_length_of_stay_relationship" src="https://github.com/user-attachments/assets/0b36cae4-c8dc-4490-84ba-87f5767f21bc" />
 
-### Findings:
-*  Minimal variation across conditions
+### Insight:
+* Minimal variance across conditions suggests standardized treatment duration rather than condition-specific care differences
 
 ### Insight:
 *  Relationship exists but is not differentiated by segment
@@ -242,6 +242,9 @@ ORDER BY avg_billing DESC;
 <img width="432" height="697" alt="Query_10_Highest_cost_segments_PART_1" src="https://github.com/user-attachments/assets/fb74dfd8-4eea-4feb-9b45-9a1893391aa5" /><p>
 <img width="408" height="107" alt="Query_10_Highest_cost_segments_PART_2" src="https://github.com/user-attachments/assets/2532fc82-0907-4e51-b2db-72f7e12202e9" />
 ### 🔑 Key Insights
+
+The analysis reveals a consistent pattern across all major dimensions, with limited variability in key operational metrics.
+
 * Billing remains highly consistent (~$25K) across all conditions
 * Length of stay is uniform (~15.5 days) across demographics
 * Admission types are evenly distributed
@@ -267,9 +270,10 @@ Despite extensive segmentation, the dataset shows low variance across all key me
 * Compare across hospitals or providers
 ---
 
-### 🧠 Analytical Approach
-* SQL data analysis and aggregation
-* Healthcare data interpretation
-* Segmentation and cohort analysis
-* Identifying patterns (and lack of patterns)
-* Translating data into business insights
+### 🔍 Analytical Takeaways
+
+- Applied SQL to analyze patient flow, cost, and operational metrics  
+- Evaluated healthcare data to assess variation across key segments  
+- Used segmentation (age, condition, insurance) to test for meaningful differences  
+- Identified lack of variance as a key finding rather than forcing conclusions  
+- Translated analysis into clear business insights around cost consistency and standardized care patterns  
