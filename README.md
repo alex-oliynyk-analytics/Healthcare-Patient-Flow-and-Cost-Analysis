@@ -219,7 +219,7 @@ GROUP BY [Medical Condition];
 ```
 <img width="341" height="184" alt="Query_8_Cost_vs_length_of_stay_relationship" src="https://github.com/user-attachments/assets/0b36cae4-c8dc-4490-84ba-87f5767f21bc" />
 
-### Insight:
+### Findings:
 * Minimal variance across conditions suggests standardized treatment duration rather than condition-specific care differences
 
 ### Insight:
